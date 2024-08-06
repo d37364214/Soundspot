@@ -1,0 +1,120 @@
+/* Reset et styles de base */
+* {
+    margin: 0;
+        padding: 0;
+            box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                    background-color: #000000; /* Utilisation de noir */
+                        color: #ffffff;
+                        }
+
+                        /* Header */
+                        header {
+                            background-color: #000000;
+                                padding: 10px 20px;
+                                }
+
+                                .header-top {
+                                    display: flex;
+                                        justify-content: space-between;
+                                            align-items: center;
+                                                margin-bottom: 10px;
+                                                }
+
+                                                h1 {
+                                                    font-size: 24px;
+                                                    }
+
+                                                    .header-icons a {
+                                                        color: #ffffff;
+                                                            margin-left: 15px;
+                                                                text-decoration: none;
+                                                                }
+
+                                                                /* Navigation principale */
+                                                                .main-nav {
+                                                                    margin-bottom: 10px;
+                                                                    }
+
+                                                                    .menu-toggle {
+                                                                        background-color: #333;
+                                                                            color: #ffffff;
+                                                                                border: none;
+                                                                                    padding: 10px 15px;
+                                                                                        cursor: pointer;
+                                                                                        }
+
+                                                                                        .menu {
+                                                                                            display: none;
+                                                                                                list-style-type: none;
+                                                                                                }
+
+                                                                                                .menu li {
+                                                                                                    position: relative;
+                                                                                                    }
+
+                                                                                                    .menu > li > a {
+                                                                                                        display: block;
+                                                                                                            padding: 10px 15px;
+                                                                                                                color: #ffffff;
+                                                                                                                    text-decoration: none;
+                                                                                                                    }
+
+                                                                                                                    /* Sous-menu */
+                                                                                                                    .submenu {
+                                                                                                                        display: none;
+                                                                                                                            position: absolute;
+                                                                                                                                background-color: #333;
+                                                                                                                                    list-style-type: none;
+                                                                                                                                        min-width: 200px;
+                                                                                                                                        }
+
+                                                                                                                                        .submenu a {
+                                                                                                                                            display: block;
+                                                                                                                                                padding: 10px 15px;
+                                                                                                                                                    color: #ffffff;
+                                                                                                                                                        text-decoration: none;
+                                                                                                                                                        }
+
+                                                                                                                                                        .menu li:hover .submenu {
+                                                                                                                                                            display: block;
+                                                                                                                                                            }
+
+                                                                                                                                                            /* Barre de recherche */
+                                                                                                                                                            .search-bar {
+                                                                                                                                                                width: 100%;
+                                                                                                                                                                }
+
+                                                                                                                                                                .search-bar input {
+                                                                                                                                                                    width: 100%;
+                                                                                                                                                                        padding: 10px;
+                                                                                                                                                                            border: none;
+                                                                                                                                                                                background-color: #333;
+                                                                                                                                                                                    color: #ffffff;
+                                                                                                                                                                                    }
+
+                                                                                                                                                                                    /* Media queries pour la responsivité */
+                                                                                                                                                                                    @media (min-width: 768px) {
+                                                                                                                                                                                        .menu-toggle {
+                                                                                                                                                                                                display: none;
+                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                        .menu {
+                                                                                                                                                                                                                display: flex;
+                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                        .menu > li {
+                                                                                                                                                                                                                                margin-right: 20px;
+                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                    .menu.active {
+                                                                                                                                                                                                                                        display: block;
+                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                        .menu-toggle.active {
+                                                                                                                                                                                                                                            background-color: #1a1a1a;
+                                                                                                                                                                                                                                            }
